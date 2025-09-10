@@ -281,7 +281,7 @@ body.light-mode {
 }
 
 body.light-mode .navbar {
-  background: #ffffff;
+  background: #cdbc00;
 }
 
 body.light-mode .nav-links a {
@@ -307,6 +307,61 @@ body.light-mode .footer {
   background: #ddd;
   color: #222;
 }
+/* Light Mode - Beige Theme */
+[data-theme="light"] {
+  --bg-color: #f5f5dc;        /* beige background */
+  --text-color: #2f2f2f;      /* dark gray text */
+  --card-bg: #fffaf0;         /* soft cream for cards */
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --heading-color: #3e2723;   /* dark brown headings */
+  --accent-color: #4a7c59;    /* muted teal (default button) */
+  --accent-hover: #e07a5f;    /* warm orange (hover button) */
+}
+
+/* Apply background */
+[data-theme="light"] body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Card styling */
+[data-theme="light"] .section,
+[data-theme="light"] .project-card,
+[data-theme="light"] .skill-item {
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="light"] .project-card:hover,
+[data-theme="light"] .skill-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Headings */
+[data-theme="light"] h1, 
+[data-theme="light"] h2, 
+[data-theme="light"] h3 {
+  color: var(--heading-color);
+}
+
+/* Buttons */
+[data-theme="light"] .btn {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  box-shadow: 0 3px 8px rgba(74, 124, 89, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="light"] .btn:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 6px 14px rgba(224, 122, 95, 0.4);
+}
+
+
 /* Hero Flex Layout */
 .hero-flex {
   display: flex;

@@ -35,8 +35,9 @@ body {
 
 .logo {
   color: #ff9800;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  padding: auto;
 }
 
 .nav-links {
@@ -142,6 +143,7 @@ body {
   background: #ff9800;
 }
 .skills-icons {
+    
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 2rem;
